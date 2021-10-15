@@ -127,8 +127,8 @@ else:
     try:
         DRAGONS = set(int(x) for x in Config.DRAGONS or [])
         DEV_USERS = set(int(x) for x in Config.DEV_USERS or [])
-        WHITELIST_USERS = set(int(x) for x in Config.WHITELIST_USERS or [])
-        SUDO_USERS = set(int(x) for x in Config.SUDO_USERS or [])
+        #WHITELIST_USERS = set(int(x) for x in Config.WHITELIST_USERS or [])
+        #SUDO_USERS = set(int(x) for x in Config.SUDO_USERS or [])
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
